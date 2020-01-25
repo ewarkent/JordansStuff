@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         //Integer ethansVariable = TestOne(5,8);
 
         //TestTwo(ethansVariable);
-        JordansFirstClass noParams = new JordansFirstClass();
+        /*JordansFirstClass noParams = new JordansFirstClass();
         JordansFirstClass oneParams = new JordansFirstClass(5);
         JordansFirstClass twoParams = new JordansFirstClass(5,10);
         JordansFirstClass threeParams = new JordansFirstClass(5,10,15);
@@ -36,7 +36,20 @@ public class MainActivity extends AppCompatActivity {
         noParams.SendToast();
         oneParams.SendToast();
         twoParams.SendToast();
-        threeParams.SendToast();
+        threeParams.SendToast();*/
+
+
+        Person ethan = new Person();
+        ethan.setName("Ethan");
+        ethan.setJob("Hackerman");
+        ethan.setAge(28);
+
+        Person ethanClone = new Person(
+                "Ethan",
+                "Hackerman",
+                28);
+
+        String getTest = ethan.getName();
     }
 
     private Integer TestOne(Integer firstNumber, Integer secondNumber) {
